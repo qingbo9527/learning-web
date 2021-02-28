@@ -1,0 +1,34 @@
+.main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.head {
+    float: left;
+    padding-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 660px;
+    width: 15%;
+    background-color: cornflowerblue;
+    color: white; 
+}
+
+/* .contant {
+    float: right;
+    padding-left: 20px;
+} */
+
+.basic p{
+    display: inline;
+}
+
+.call p{
+    display: inline;
+}
+
+p {
+    word-spacing: 10px;
+} 

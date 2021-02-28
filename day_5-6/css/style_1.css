@@ -7,11 +7,12 @@
     float: left;
 }
 
+/*
 .contant {
     float: right;
     padding-left: 20px;
 }
-
+*/
 .basic p{
     display: inline;
 }

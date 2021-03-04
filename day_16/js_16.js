@@ -1,4 +1,4 @@
 document.getElementById('salary').onclick = function(){
-	var result = 20000;
+	var result = '年薪百万不是梦';
 	document.getElementById('result').innerHTML = result;
 }

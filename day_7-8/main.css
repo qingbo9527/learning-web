@@ -1,221 +1,162 @@
-/* 初始化页面 */
 * {
     margin: 0;
     padding: 0;
 }
 
-*{
-    box-sizing: border-box;
+
+a {
+    font-size: 12px;
+    color: #fff;
 }
-/* 通用样式 */
-body {
-    font: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+
+header {
+    height: 60px;
+    background-color: #333333;
+}
+
+.log {
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
 }
 
 h2 {
-    font-size: 1.8rem;
+    position: absolute;
+    left: 200px;
+    line-height: 60p;
+    padding-top: 10px;
 }
 
-p {
-    font-size: 1.4rem;
+.menu-top {
+    float: right;
+    margin-top: 5px;
+    padding-right: 200px;
 }
 
-li {
-    font-size: 1.3rem;
+.menu-top li {
     list-style-type: none;
+    display: inline;
+    margin-left: 5px;
 }
 
-a {
-    outline: none;
+a:link,:visited{
     text-decoration: none;
-    padding: 2px 1px 0;
+    color:aliceblue;
 }
 
-a:link {
-    color: inherit;
-}
-
-a:hover {
-    border-bottom: 1px solid;
-}
-
-.inner {
-    width: 960px;
+.banner {
+    width: 100%;
     margin: 0 auto;
+    height: 200px;
+    background-color: limegreen;
 }
 
-/* 头部 */
-header {
-    width: 100%;
-    height: 60px;
-    background-color: #3C4043;
+.turns {
+    float: right;
+    margin-top: 160px;
+    margin-right: 200px;
 }
 
-header .inner {
-    position: relative;
-    height: 60px;
-}
-
-header .logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
-    padding: 10px 0;
-    color: #ffffff;
-}
-
-header .ru_nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 4px o;
-    color: #ffffff;
-}
-
-header .ru_nav li {
-    font-size: 1.0rem;
-    float: left;
-    margin-left: 20px;
-}
-
-header .ru_nav a {
-    color: #ffffff;
-}
-
-/* banner */
-#banner {
-    width: 100%;
-    height: 300px;
-    background-color: #67BB33;
-}
-
-#banner .inner {
-    position: relative;
-    height: 300px;
-}
-
-#banner .caption {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    height: 50px;
-}
-
-#banner .caption li {
+.num li {
     display: inline-block;
-    position: relative;
-    float: left;
-    width: 30px;
-    height: 50px;
-    margin-left: 18px;
-}
-
-#banner .caption li a {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: inherit;
-    height: 40px;
-    border: 1px solid #130c01;
-    background-color: gainsboro;
-}
-
-#banner .caption li:hover a {
-    height: 50px;
-}
-
-#banner .caption li span {
-    position: absolute;
-    bottom: 4px;
-    padding: 0 5px;
-}
-
-/* 主导行区域 */
-#main_nav {
-    width: 100%;
-    height: 60px;
-    border-bottom: 2px solid #ccc;
-}
-
-#main_nav .inner {
-    position: relative;
-    height: 60px;
-}
-
-#main_nav .inner ul {
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-
-#main_nav .inner li {
-    display: inline-block;
-    float: left;
-    width: 120px;
-    height: 50px;
-    padding: 10px 10px;
+    background-color: #b2dd99;
+    list-style-type: none;
+    width: 20px;
+    height: 25px;
+    line-height: 25px;
     text-align: center;
-    border: 1px solid #aaa;
-    border-bottom-width: 2px;
-    border-radius: 20px 20px 0 0;
-    background-color: #ccc;
+    vertical-align: bottom;
+    border: 1px solid black;
+    margin-left: 5px;
 }
 
-#main_nav .inner li:hover {
+ul li.num-select {
+    color: grey;
+    width: 20px;
+    height: 35px;
+    line-height: 45px;
+    background-color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    border-bottom: 1px solid #abadab;
+}
+
+.menu {
+    position: relative;
+    height: 60px;
+    top: 10px;
+}
+
+.menu .menu-middle {
+    position: absolute;
+    left: 200px;
+    bottom: -1px;
+}
+
+.menu ul li {
+    display: inline-block;
+    background: #eeeeee;
+    padding: 15px 30px;
+    border: 1px solid #cccccc;
+    border-radius: 20px 20px 0 0;
+}
+
+.menu ul li:hover {
     background-color: transparent;
     border-bottom: 2px solid rgba(255,255,255,1);
 }
 
-#main_nav .inner a {
-    color: #ABADAD;
+.menu .menu-middle a {
+    color: #abadab;
     border: none;
 }
 
-/* 主内容区域 */
-#main_content {
+section {
     width: 100%;
+    margin: 0 auto;
 }
 
-#main_content .inner {
+.main-content {
+    width: 960px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
     flex-direction: column;
 }
-
-#main_content .inner ul {
+.main {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
 }
-
-#main_content .inner li {
-    padding: 80px;
+.content1 {
     border: 1px solid #ccc;
+    padding: 86px 106px;
+    margin: 10px 10px 0 0;
     text-align: center;
 }
-
-#main_content .inner li + li {
-    margin-left: 10px;
+.content2 {
+    border: 1px solid #ccc;
+    padding: 80px;
+    margin: 10px 10px 0 0;
+    text-align: center;
 }
-
-#main_content .inner .row_2 li {
-    padding: 80px 68px;
-}
-
-#main_content .inner .row_3 li {
-    padding: 80px 100px;
+.content3 {
+    border: 1px solid #ccc;
+    padding: 86px 116px;
+    margin: 10px 10px 0 0;
+    text-align: center;
 }
 
 footer {
     width: 100%;
-    height: 100px;
-    padding: 20px 0;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 20px;
     text-align: center;
-    color: #fffffb;
-    background-color: #3C4043;
-}
-
-footer a {
-    color: #fffffb;
+    color: aliceblue;
+    background-color: #333333;
 }

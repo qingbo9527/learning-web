@@ -1,0 +1,545 @@
+/* 页面初始化 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 h2 h3 h4 p {
+  margin: 0;
+}
+
+/* 通用样式  */
+
+body {
+  margin: 0 auto;
+  width: 1600px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 350;
+  line-height: 35px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4a4a;
+  font-size: 10px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 28px;
+  color: #4b4a4a;
+}
+
+/* 清除浮动 */
+
+.clearfix::after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.shade {
+  width: 100%;
+  height: 100%;
+}
+
+/* 头部样式 */
+
+header {
+  letter-spacing: 0.08em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 1600px;
+  height: 990px;
+  color: #f5f1eb;
+  background-color: #37342d;
+  background-image: url(img/Background1.png);
+}
+
+header .shade {
+  padding: 0 315px;
+}
+
+header h1 {
+  font-size: 42px;
+  padding-top: 200px;
+  font-weight: 100;
+}
+
+header > p {
+  padding: 88px 5px 0;
+  width: 790px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #e9d8bc;
+}
+
+/* 登录框 */
+
+.register {
+  position: absolute;
+  bottom: 210px;
+  width: 971px;
+  height: 250px;
+  border: 1px solid #525151;
+}
+
+.register h2 {
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-top: 61px;
+}
+
+.register em {
+  font-size: 12px;
+  padding-top: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #666059;
+}
+
+.input-row {
+  margin-top: 45px;
+}
+
+.input-row input[type="email"] {
+  width: 275px;
+  height: 50px;
+  border: 1px solid #666059;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  padding-left: 30px;
+}
+
+.input-row input[type="password"] {
+  margin: 0 30px;
+  width: 275px;
+  height: 50px;
+  border: 1px solid #666059;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  padding-left: 30px;
+}
+
+.input-row input[type="submit"] {
+  width: 120px;
+  height: 50px;
+  border-radius: 1.5px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* 页面描述 */
+
+.description {
+  width: 100%;
+  height: 650px;
+  background-color: #ffffff;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.description em {
+  letter-spacing: 0.5px;
+}
+
+.description h2 {
+  width: 700px;
+  margin: 20px auto 0;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.description .des-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 40px 250px;
+}
+
+.description .des-box .des-item {
+  display: flex;
+  flex: 1 400px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.description .des-box .des-item .left {
+  flex: 1;
+}
+
+.description .des-box .des-item .right {
+  flex: 7;
+}
+
+.description .des-box .des-item section p {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.description .des-box .des-item section h3 {
+  margin: 0 0 20px 0;
+  text-transform: capitalize;
+}
+
+/* banner */
+
+.banner {
+  background-color: #1f1819;
+  background-image: url(img/图层2.png);
+  background-position: center;
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.banner .textarea {
+  width: 350px;
+  position: absolute;
+  top: 170px;
+  left: 300px;
+}
+
+.banner .textarea h2 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+
+.banner .textarea p {
+  margin-top: 30px;
+  line-height: 1.5em;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.banner .btn-row {
+  position: absolute;
+  top: 520px;
+  left: 300px;
+}
+
+.banner .btn-row button {
+  width: 200px;
+  height: 50px;
+  border: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.banner .btn-row button:nth-of-type(1) {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-right: 20px;
+}
+.banner .btn-row button:nth-of-type(2) {
+  background-color: transparent;
+  color: white;
+  border: 1px solid grey;
+}
+
+/* id + position 很好使 */
+
+#Screen {
+  position: absolute;
+  top: 135px;
+  right: 0px;
+}
+
+#Ipad {
+  position: absolute;
+  top: 104px;
+  right: 1px;
+}
+
+/* main-content */
+
+.contain {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contain > section {
+  padding: 0 315px 60px;
+  border-bottom: 1px solid #c9c9c8;
+}
+
+.contain > section:nth-child(1) {
+  padding-top: 80px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.wrap section {
+  padding: 0 25px;
+}
+
+.wrap section p {
+  margin-top: 25px;
+  color: #666059;
+}
+
+.main-article {
+  width: 100%;
+  height: 1000px;
+}
+
+.article1 {
+  width: 970px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.pic1 {
+  width: 570px;
+  height: 350px;
+  margin-top: 115px;
+  background-image: url(img/leaves.png);
+  float: left;
+}
+
+.art1 {
+  box-sizing: border-box;
+  padding-left: 670px;
+  padding-top: 190px;
+}
+
+.pic2 {
+  width: 570px;
+  height: 350px;
+  margin-top: 80px;
+  background-image: url(img/parrot.png);
+  float: right;
+}
+
+.art2 {
+  box-sizing: border-box;
+  padding-top: 200px;
+  margin-right: 645px;
+}
+
+.contain > section:nth-child(3) {
+  padding-top: 60px;
+}
+
+.contain > section:nth-child(3) > p {
+  margin-top: 20px;
+}
+
+/* team-member */
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.member {
+  position: relative;
+  height: 340px;
+  flex: 0 0 470px;
+  margin-top: 30px;
+  color: #fff;
+}
+.member :nth-child(1) {
+  background-image: url(img/Person1.png);
+}
+
+.member:nth-child(2) {
+  background-image: url(img/Person2.png);
+}
+
+.member:nth-child(3) {
+  background-image: url(img/Person3.png);
+}
+
+.member:nth-child(4) {
+  background-image: url(img/Person4.png);
+}
+
+.member .shade {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.member .shade:hover {
+  opacity: 1;
+}
+
+.member .shade h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+.member .shade em {
+  font-style: normal;
+  color: #aeaeac;
+  font-size: 12px;
+  line-height: 28px;
+}
+.info-list {
+  font-size: 0;
+}
+.info-list img {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #aeaeac;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* cotacts-us */
+
+.contain .suggest {
+  margin-top: 50px;
+  display: flex;
+  border-bottom: none;
+}
+
+.message-box {
+  border: 1px solid #aeaeac;
+  border-radius: 5px;
+  height: 560px;
+  flex: 0 0 470px;
+  padding: 0 50px;
+}
+
+.message-box h3 {
+  margin: 45px 0;
+}
+
+.message-box input {
+  width: 370px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.message-box textarea {
+  width: 370px;
+  height: 140px;
+  padding: 20px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.message-box input[type^="submit"] {
+  background: #141414;
+  color: #fff;
+}
+
+.contacts {
+  margin-left: 130px;
+  text-align: left;
+}
+
+.contacts h2 {
+  margin-top: 85px;
+}
+
+.contacts .info {
+  margin-top: 65px;
+}
+
+.contacts .info img {
+  flex: 0 0 20px;
+  margin-right: 1em;
+}
+
+.contacts .info li {
+  margin-bottom: 34px;
+  display: flex;
+}
+
+.contacts .info li img:nth-child(1) {
+  width: 32px;
+  height: 32px;
+}
+
+.contacts .info section {
+  width: 155px;
+  line-height: 26px;
+}
+
+/* footer */
+
+footer {
+  padding: 68px 210px 60px;
+  display: flex;
+  background: #141414;
+  color: #fff;
+}
+
+footer section {
+  flex: 0 0 300px;
+}
+
+footer section li {
+  margin-top: 30px;
+  margin-left: -38px;
+}
+
+footer section:nth-child(4) {
+  flex: 0 0 265px;
+}
+
+footer section:nth-child(4) p {
+  line-height: 24px;
+}
+
+footer section:nth-child(4) .info {
+  padding-top: 40px;
+}
+
+footer section:nth-child(4) .info img {
+  margin-right: 24px;
+}
